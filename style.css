@@ -1,0 +1,100 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+body {
+    background-color:#E9ECF8
+}
+header{ 
+    margin-left: 1rem;
+}
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.padre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-texto {
+    margin-top: 90px;
+    background-color:#E9ECF8;
+    border-style:hidden;
+    box-sizing: border-box;
+    position: relative;
+    float:none;
+    overflow-y: auto;
+
+}
+
+.mensaje {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url("/assets/Mono.png");
+    /*width: 60%;sacar si molesta*/
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    
+}
+
+.copiar {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border-radius: 24px;
+}
+
+.encriptar {
+    background-color: #0A3871;
+    color: #fff;
+}
+
+.desencriptar {
+    margin-left: 30px;
+}
+
+.informacion {
+    font-size: 15px;
+}
+
+.pie{
+    font-size: 10px;
+    text-align: center;
+}
+
+@media (max-width:800px){
+
+    .header{
+        padding: 2%;
+    }
+    .header__menu{
+        justify-content: left;
+    }
+    .ingreso-box{
+        position: top;
+    }
+
+    .mensaje-box{
+        position: bottom;
+        flex-direction:column-reverse;
+        width: auto;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
+}
